@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link href="paint.css" rel="stylesheet"/>
+    <link href="css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head_menu">
+            <ul class="head_ul">
+                <li class="head_li"><a href="paint.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li class="head_li"><a href="#" id="clear"><i class="fa fa-paint-brush" aria-hidden="true"></i>Clear</a></li>
+                <li class="head_li"><a href="#" id="save"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</a></li>
+                <li class="head_li"><a href="#" id="back"><i class="fa fa-reply" aria-hidden="true"></i>Back</a></li>
+                <li class="head_li"><a href="#" id="info"><i class="fa fa-info-circle" aria-hidden="true"></i>Info</a></li>
+            </ul>
+        </div>`
+    </header>
+    <div class="menu_button">
+        <i class="fa fa-pencil fa-3x" aria-hidden="true" id="p_black"></i>
+        <i class="fa fa-pencil fa-3x" aria-hidden="true" id="p_red"></i>
+        <i class="fa fa-pencil fa-3x" aria-hidden="true" id="p_blue"></i>
+        <i class="fa fa-pencil fa-3x" aria-hidden="true" id="p_green"></i>
+        <i class="fa fa-pencil fa-3x" aria-hidden="true" id="p_brown"></i>
+        <i class="fa fa-pencil fa-3x" aria-hidden="true" id="p_yellow"></i>
+        <i class="fa fa-eraser fa-3x" aria-hidden="true" id="p_clear"></i>
+        <i class="fa fa-circle fa-lg" aria-hidden="true" id="lg"></i>
+        <i class="fa fa-circle fa-2x" aria-hidden="true" id="l2x"></i>
+        <i class="fa fa-circle fa-3x" aria-hidden="true" id="l3x"></i>
+        <i class="fa fa-circle fa-4x" aria-hidden="true" id="l4x"></i>
+    </div>
+    <div class="paint_canvas">
+        <canvas id="canvas" width="800" height="400"></canvas>
+    </div>
+    <div class="saved_img">
+        <p>Image saved</p>
+    </div>
+    <div class="save_img">
+        <img src="" id="img_save">
+    </div>
+    <div class="info">
+        <p>My email: butzovdmitry31@gmail.com</p>
+    </div>
+    <!-- <input id="color" type="color"> -->
+    <script src="paint.js"></script>
+</body>
+</html>
