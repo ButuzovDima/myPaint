@@ -8,9 +8,9 @@ let fa_pencils = document.getElementsByClassName('fa-pencil');
 let fa_eraser = document.getElementById("p_clear");
 let style_pencil = function(a){
     for(let i = 0; i < fa_pencils.length; i++){
-        if(fa_pencils[i].style.boxShadow = '0 0 6px 3px #454547'){
+        //if(fa_pencils[i].style.boxShadow === '0 0 6px 3px #454547'){
             fa_pencils[i].style.boxShadow = null;
-        }
+        //}
     }
     if(fa_eraser.style.boxShadow = '0 0 6px 3px #454547'){
         fa_eraser.style.boxShadow = null;
