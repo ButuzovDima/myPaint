@@ -8,11 +8,20 @@ let fa_pencils = document.getElementsByClassName('fa-pencil');
 let fa_eraser = document.getElementById("p_clear");
 let style_pencil = function(a){
     for(let i = 0; i < fa_pencils.length; i++){
-        //if(fa_pencils[i].style.boxShadow === '0 0 6px 3px #454547'){
+        console.log(fa_pencils[i].style.boxShadow);
+        //IE
+        if(fa_pencils[i].style.boxShadow === '0px 0px 6px 3px #454547'){
             fa_pencils[i].style.boxShadow = null;
-        //}
+        }
+        //Chrome
+        if(fa_pencils[i].style.boxShadow === 'rgb(69, 69, 71) 0px 0px 6px 3px'){
+            fa_pencils[i].style.boxShadow = null;
+        }
     }
-    if(fa_eraser.style.boxShadow = '0 0 6px 3px #454547'){
+    if(fa_eraser.style.boxShadow === '0px 0px 6px 3px #454547'){
+        fa_eraser.style.boxShadow = null;
+    }
+    if(fa_eraser.style.boxShadow === 'rgb(69, 69, 71) 0px 0px 6px 3px'){
         fa_eraser.style.boxShadow = null;
     }
     a.style.borderRadius = '7px';
@@ -22,7 +31,10 @@ let style_pencil = function(a){
 let fa_circles = document.getElementsByClassName('fa-circle');
 let style_circle = function(a){
     for(let i = 0; i < fa_circles.length; i++){
-        if(fa_circles[i].style.boxShadow = '0 0 6px 3px #454547'){
+        if(fa_circles[i].style.boxShadow === '0px 0px 6px 3px #454547'){
+            fa_circles[i].style.boxShadow = null;
+        }
+        if(fa_circles[i].style.boxShadow === 'rgb(69, 69, 71) 0px 0px 6px 3px'){
             fa_circles[i].style.boxShadow = null;
         }
     }
